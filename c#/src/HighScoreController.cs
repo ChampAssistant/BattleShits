@@ -180,7 +180,7 @@ static class HighScoreController
 			int x = 0;
 			x = SCORES_LEFT + SwinGame.TextWidth(GameResources.GameFont("Courier"), "Name: ");
 
-			SwinGame.StartReadingText(Color.White, NAME_WIDTH, GameResources.GameFont("Courier"), x, ENTRY_TOP);
+			SwinGame.StartReadingText(Color.White, NAME_WIDTH + 3, GameResources.GameFont("Courier"), x, ENTRY_TOP);
 
 			//Read the text from the user
 			while (SwinGame.ReadingText()) {
@@ -201,7 +201,7 @@ static class HighScoreController
 			_Scores.RemoveAt(_Scores.Count - 1);
 			_Scores.Add(s);
 			_Scores.Sort();
-
+			SaveScores();
 			GameController.EndCurrentState();
 		}
 	}
