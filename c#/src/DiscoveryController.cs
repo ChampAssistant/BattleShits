@@ -16,7 +16,7 @@ static class DiscoveryController
 	/// <summary>
 	/// Handles input during the discovery phase of the game.
 	/// </summary>
-	/// <remarks>
+	/// <remarks>z
 	/// Escape opens the game menu. Clicking the mouse will
 	/// attack a location.
     /// Isuru: Updated Keycodes
